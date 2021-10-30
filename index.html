@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW3</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.js" integrity="sha512-NQVmLzNy4Lr5QTrmXvq/WzTMUnRHmv7nyIT/M6LyGPBS+TIeRxZ+YQaqWxjpRpvRMQSuYPQURZz/+pLi81xXeA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+    <body>
+       <strong><label>Original String: </label></strong>
+        <input type="text" name="input" id="input" autofocus="autofocus">
+        <input type="button" value="submit" id="submit" onclick="crypto();">
+        <br>
+        <strong><span id="output"></span></strong>
+
+    <div id="hashes">
+    <p> AES Encrypted: <span id = "aes"></span></p>
+    <p> SHA1 Encrypted: <span id = "sha1"></span></p>
+    <p> SHA3 Encrypted: <span id = "sha3"></span></p>
+    <p> SHA224 Encrypted: <span id = "sha224"></span></p>
+    </div>
+    <br><br>
+
+   <h3>Decimal To Binary Converter</h3>
+       <label>Please Enter a valid number greater than 0:</label><br><br>
+       <input type="text" id="num" name="num" >
+
+       <input type="button" id="convert" name="convert" value="submit" onclick="d2b()"><br><br>
+       <label>Binary:</label>
+        <span id = "ans"></span>
+   <h3>Binary To Decimal Converter</h3>
+       <label>Please Enter Binary Number:</label>
+       <input type="text" id="bin" name="bin">
+       <input type="button" id="convert2" name="convert2" value="submit" onclick="b2d()"><br><br>
+        <label>Decimal:</label>
+       <span id = answer></span>
+
+    <script  src="crypto.js"></script>
+    </body>
+</html>
